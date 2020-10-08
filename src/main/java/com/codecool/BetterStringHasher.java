@@ -17,7 +17,8 @@ public class BetterStringHasher
 
 		for (int i = 0; i < s.length(); ++i)
 		{
-			h += s.charAt(i)*Math.pow(37, i)%1008001;
+			h += i*37;
+			h += s.charAt(i);
 		}
 
 		return h;

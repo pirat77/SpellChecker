@@ -27,7 +27,7 @@ public class HashTable
 
 	StringHasher stringHasher;
 	int tableSize;
-	List<LinkedList<String>> hashTable;
+	List<LinkedField> hashTable;
 
 	public HashTable(int tableSize, StringHasher hasher)
 
@@ -36,10 +36,9 @@ public class HashTable
 		this.tableSize = tableSize;
 		this.hashTable = new ArrayList<>(tableSize);
 		for (int i = 0; i<tableSize; i++){
-			hashTable.add(new LinkedList<String>());
+			hashTable.add(new LinkedField());
 		}
 	}
-
 
 	/**
 	 * Takes a string and adds it to the hash table, if it's not already
