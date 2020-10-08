@@ -1,5 +1,3 @@
-package com.codecool;
-
 /**
  *
  * ICS 23 Summer 2004
@@ -11,18 +9,17 @@ package com.codecool;
  */
 
 public class BetterStringHasher
-implements StringHasher
+		implements StringHasher
 {
 	public int hash(String s)
 	{
 		int h = 0;
-		
+
 		for (int i = 0; i < s.length(); ++i)
 		{
-			h *= 37;
-			h += s.charAt(i);
+			h += s.charAt(i)*Math.pow(37, i)%1008001;
 		}
-		
+
 		return h;
 	}
 }
