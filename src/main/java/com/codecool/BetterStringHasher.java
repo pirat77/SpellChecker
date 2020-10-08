@@ -1,3 +1,5 @@
+package com.codecool;
+
 /**
  *
  * ICS 23 Summer 2004

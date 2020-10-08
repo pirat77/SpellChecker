@@ -1,3 +1,5 @@
+package com.codecool;
+
 /**
  *
  * ICS 23 Summer 2004
@@ -45,7 +47,7 @@ public class HashTable
   */
 	public boolean lookup(String s)
 	{
-
+		return false;
 	}
 	
 
