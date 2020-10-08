@@ -17,10 +17,9 @@ public class BetterStringHasher
 
 		for (int i = 0; i < s.length(); ++i)
 		{
-			h += i*37;
+			h +=29*i;
 			h += s.charAt(i);
 		}
-
 		return h;
 	}
 }
